@@ -1,8 +1,6 @@
 # 2Doz - Discover and Chat App for Android
 
-![Icon](screenshots/icon.png)
-
-<img src="screenshots/screen1.jpg" alt="Mobile Chat app" width="200" height="200">
+<img src="screenshots/icon.png" alt="Mobile Chat app" width="200" height="200">
 
 2Doz is a mobile chat application for Android that enables you to discover and connect with people around the world. Engage in conversations using both voice and text messages, and explore a variety of features designed to enhance your social experience.
 

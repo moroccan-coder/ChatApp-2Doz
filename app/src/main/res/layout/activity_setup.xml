@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".SetupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_dark_gradien"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/topBannr"
+            >
+            <ImageView
+                android:id="@+id/backspace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                android:padding="8dp"
+                android:onClick="signout"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create an Account"
+                android:textColor="#C1DDDDDD"
+                android:textSize="18sp"
+                android:elevation="4dp"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/raleway_bold"
+                android:id="@+id/txt_profile"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 2/2"
+                android:fontFamily="@font/raleway_bold"
+                android:textColor="#A4DDDDDD"
+                android:gravity="end"
+                android:layout_marginEnd="16dp"
+android:layout_gravity="center_vertical"
+
+                />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/topBannr"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:padding="16dp">
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/my_profile_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="profImage"
+                        android:src="@drawable/prof_avatar"
+                        app:civ_border_color="#65FFFFFF"
+                        app:civ_border_width="1dp"
+                        />
+                    <ProgressBar
+                        android:indeterminateDrawable="@drawable/m_progress_animation"
+                        android:layout_height="40dp"
+                        android:layout_width="40dp"
+                        android:id="@+id/progress_heart_profile"
+                        android:layout_centerInParent="true"
+                        android:elevation="4dp"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="26dp"
+                        android:src="@drawable/countryicon"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Country"
+                        android:textColor="#8FFFFFFF"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+
+                        />
+
+                </LinearLayout>
+                <com.hbb20.CountryCodePicker
+                    android:background="@drawable/bg_outline_white"
+                    android:id="@+id/ccp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:ccpDialog_backgroundColor="@color/colorPrimary2"
+                    app:ccpDialog_showCloseIcon="true"
+                    app:ccpDialog_textColor="#ddd"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccp_contentColor="#ddd"
+                    app:ccp_showFullName="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_showPhoneCode="false"
+                    app:ccp_textGravity="LEFT"
+                    app:ccp_textSize="14sp"
+                    android:padding="4dp"
+                    app:ccp_showArrow="false"
+                    app:ccp_clickable="false"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/birthdayicon"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Birthday"
+                        android:textColor="#8FFFFFFF"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_outline_white"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/day_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#ddd"
+                        android:dropDownVerticalOffset="30dp"
+                        android:paddingHorizontal="6dp"
+                        android:paddingBottom="10dp"
+                        />
+
+                    <Spinner
+                        android:id="@+id/month_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#ddd"
+                        android:dropDownVerticalOffset="30dp"
+                        android:paddingBottom="10dp" />
+
+                    <Spinner
+                        android:id="@+id/year_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#ddd"
+                        android:dropDownVerticalOffset="30dp"
+                        android:paddingHorizontal="6dp"
+                        android:paddingBottom="10dp" />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="23dp"
+                        android:src="@drawable/relationicon"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Relationship Status"
+                        android:textColor="#8FFFFFFF"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginRight="20dp"
+                        >
+                        <ImageView
+                            android:id="@+id/imgV_relation_single"
+                           android:onClick="rSingle"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/statussi"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/status_bg_active"
+                            android:padding="12dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Single"
+                            android:textColor="#D5DDDDDD"
+                            android:fontFamily="@font/raleway_bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        >
+                        <ImageView
+                            android:id="@+id/imgV_relation_in"
+                            android:onClick="Rinrela"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/statusin"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/status_bg_inactive"
+                            android:padding="12dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="In Relationship"
+                            android:textColor="#D5DDDDDD"
+                            android:fontFamily="@font/raleway_bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        >
+                        <ImageView
+                            android:id="@+id/imgV_relation_comp"
+                            android:onClick="RCompl"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/statusincomp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/status_bg_inactive"
+                            android:padding="12dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Complicated"
+                            android:textColor="#D5DDDDDD"
+                            android:fontFamily="@font/raleway_bold"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/save_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeColor="#FFF"
+                    app:cornerRadius="10dp"
+                    android:backgroundTint="#01975A"
+                    android:textColor="#ddd"
+                    android:onClick="saveprofile"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:indeterminateDrawable="@drawable/m_progress_animation"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:id="@+id/progress_heart"
+        android:layout_centerInParent="true"
+        android:elevation="6dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

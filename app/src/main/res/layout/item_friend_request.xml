@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/linerClickUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/my_profile_pic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/bg2"
+                android:transitionName="user_omg_trans" />
+
+            <TextView
+                android:id="@+id/txtUseRequestName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Name of user"
+
+                android:textColor="#D7000000" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAccept"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorPrimary2"
+            android:backgroundTint="@color/colorPrimary2"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:textColor="#ddd"
+            android:textSize="12sp"
+            app:cornerRadius="16dp" />
+
+        <ImageView
+            android:id="@+id/btnCancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#00DDDDDD"
+            android:padding="8dp"
+            android:src="@drawable/cancel_req" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="4dp"
+        android:background="#72000000" />
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary2"
+    android:orientation="vertical"
+    android:id="@+id/bottomChetLayout"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="?android:attr/actionBarSize"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:elevation="20dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:padding="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Do Action"
+        android:textColor="#ddd"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/btnDeletFriendReq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:padding="8dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_clear_reqest" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Cancel Friend Request"
+                android:layout_gravity="center"
+                android:textColor="#ddd"
+                android:textStyle="bold"
+                android:fontFamily="@font/raleway_medium"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_keyboard_return_white_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Return"
+                android:layout_gravity="center"
+                android:textColor="#ddd"
+                android:textStyle="bold"
+                android:fontFamily="@font/raleway_medium"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

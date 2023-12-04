@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/root_calling_gradient"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary_opacity"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/botomLnr"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="105dp"
+                        android:src="@drawable/logggo"
+                        android:onClick="loggin"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="Easy way to find Your Doz!"
+                        android:textColor="#ddd"
+                        android:textSize="18sp"
+                        android:onClick="Signupp"
+                        />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/sign_in_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#db4437"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:onClick="onclickFacebookButton"
+                    android:text="Sign in with Google "
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    app:backgroundTint="#db4437 "
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ico_googl24"
+                    app:iconSize="18dp"
+                    app:iconTint="@null" />
+
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/login_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:visibility="gone" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/fblogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#1778f2"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:onClick="onclickFacebookButton"
+                        android:text="Sign in with Facebook"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        app:backgroundTint="#1778f2 "
+                        app:cornerRadius="10dp"
+                        app:icon="@drawable/icon_fb"
+                        app:iconSize="18dp"
+                        app:iconTint="@null" />
+                </FrameLayout>
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="We don't post or share anything to facebook."
+                     android:textColor="#EDDDDDDD"
+                     android:gravity="center"
+                     android:textSize="12sp"
+                     />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/botomLnr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#79000000"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="By Continuing you Accept our"
+                android:textColor="#ddd"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/raleway_medium"
+                android:text="@string/terms"
+                android:textColor="#3D5AFE"
+                android:padding="4dp"
+                android:onClick="termsActivity"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:focusable="true"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/raleway_medium"
+                android:text="And"
+                android:textColor="#ddd"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/raleway_medium"
+                android:text="@string/service"
+                android:padding="4dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:focusable="true"
+                android:onClick="serviceActivity"
+                android:textColor="#3D5AFE"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrProgress"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_progress"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progress_heart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:indeterminateDrawable="@drawable/m_progress_animation" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

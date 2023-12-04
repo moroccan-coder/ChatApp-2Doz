@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    >
+
+
+
+        <ImageView
+            android:id="@+id/imgAniim2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/circle_anim"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:id="@+id/imgAniim"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/circle_anim"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/my_profile_pic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/avatar_prf"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Nearby People ..."
+            android:textColor="#8F000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:layout_below="@+id/my_profile_pic"
+            android:layout_centerInParent="true"
+            />
+
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#E9E9E9">
+
+    <include
+        android:id="@+id/layoutAnim"
+        layout="@layout/animation_location_layout"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/lnrEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/earhAnim"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/swipeee"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="No more profile to show,repeat i a few minutes!"
+            android:textColor="#77000000"
+            android:fontFamily="@font/raleway_semibold"
+            />
+    </LinearLayout>
+
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipcardd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lntbuttonn"
+        app:max_visible="4"
+        app:min_adapter_stack="6"
+        app:rotation_degrees="16" />
+
+    <ImageView
+        android:id="@+id/like_emoji"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/likkkke"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/dislike_emoji"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/sorry"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lntbuttonn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            >
+
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#fff"
+                    android:layout_alignParentStart="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/skip_ic"
+                    app:elevation="4dp"
+                    app:fabSize="normal"
+                    app:maxImageSize="20dp"
+                    app:rippleColor="@null" />
+
+
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="5dp"
+                android:elevation="4dp"
+                android:layout_centerInParent="true"
+                android:background="#fff" />
+
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#fff"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/heart_love"
+                    app:elevation="4dp"
+                    app:fabSize="normal"
+                    app:maxImageSize="32dp"
+                    android:layout_alignParentEnd="true"
+                    app:rippleColor="@null" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

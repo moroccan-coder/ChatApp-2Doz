@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#1e272e"
+    android:layout_height="400dp">
+
+    <LinearLayout
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/txt_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="X"
+            android:textColor="#ddd"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:background="@drawable/dilogu_close"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You don't have enough Minutes To make a Call!"
+            android:textColor="#fff"
+            android:padding="4dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="@font/raleway_semibold"
+            />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_Sorry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click the button Below to get free Minutes"
+                android:textColor="#ddd"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"
+                />
+
+            <Button
+                android:id="@+id/btnFreeMinutes"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/btngps"
+                android:backgroundTint="@color/startColor"
+                android:padding="8dp"
+                android:text="Free Minutes"
+                android:textColor="#fff"
+                app:cornerRadius="20dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="80dp" android:orientation="horizontal">
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:background="@color/colorPrimary2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:orientation="vertical">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_selected_level"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#ddd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Balance"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#ff1f5a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txt_selected_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 Minutes"
+                    android:textColor="#ddd"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

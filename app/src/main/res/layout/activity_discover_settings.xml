@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFB"
+    tools:context=".discover_settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/colorPrimary2"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"
+            android:padding="8dp"
+            android:onClick="backkk"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter"
+            android:textColor="#99DDDDDD"
+            android:textSize="18sp"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_marginLeft="32dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:fontFamily="@font/raleway_bold"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            app:strokeColor="#B5DDDDDD"
+            app:strokeWidth="0.8dp"
+            android:textColor="#DFDDDDDD"
+            android:onClick="saveFilter"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:textColor="#C6000000"
+            android:textSize="15sp"
+            android:fontFamily="@font/raleway_semibold"
+            android:layout_marginBottom="8dp"
+            />
+        <CheckBox
+            android:id="@+id/checkAllcountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All country"
+            android:textColor="#B5000000"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:checked="true"
+            android:onClick="chekkcountry"
+            />
+        <TextView
+            android:id="@+id/countryTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All country"
+            android:fontFamily="@font/raleway_semibold"
+            android:textColor="#B5000000"
+            android:textSize="14sp"
+            android:background="@drawable/bg_outline_black"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:onClick="contrytxxt"
+            android:visibility="gone"
+            />
+        <com.hbb20.CountryCodePicker
+            android:background="@drawable/bg_outline_black"
+            android:id="@+id/ccp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:ccpDialog_backgroundColor="#fff"
+            app:ccpDialog_showCloseIcon="true"
+            app:ccpDialog_textColor="#000000"
+            app:ccp_autoDetectCountry="false"
+            app:ccp_contentColor="#B5000000"
+            app:ccp_showFullName="true"
+            app:ccp_showNameCode="false"
+            app:ccp_showPhoneCode="false"
+            app:ccp_textGravity="LEFT"
+            app:ccp_textSize="14sp"
+            android:padding="4dp"
+
+            />
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Looking for"
+            android:textColor="#C6000000"
+            android:textSize="15sp"
+            android:fontFamily="@font/raleway_semibold"
+            android:layout_marginBottom="8dp"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup_lookingfor"
+
+            >
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/gender_male"
+                android:checked="false"
+                android:textColor="#B5000000"
+                android:layout_marginEnd="16dp"
+                android:buttonTint="@color/colorPrimaryDark"
+                />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/gender_female"
+                android:textColor="#B5000000"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_marginEnd="16dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Both"
+                android:id="@+id/gender_both"
+                android:textColor="#B5000000"
+                android:buttonTint="@color/colorPrimaryDark"
+
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age range"
+            android:textColor="#C6000000"
+            android:textSize="15sp"
+            android:fontFamily="@font/raleway_semibold"
+            android:layout_marginBottom="8dp"
+            />
+        <CheckBox
+            android:id="@+id/checkAllage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All age"
+            android:textColor="#B5000000"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:checked="true"
+            android:onClick="chekk"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/lnrSekkbar1"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textMin"
+                android:textColor="#000000"
+                android:fontFamily="@font/raleway_bold"
+                android:text="18"
+                />
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                android:layout_weight="1"
+                android:id="@+id/rangeSeekbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:corner_radius="10"
+                app:min_value="18"
+                app:max_value="98"
+                app:bar_color="#EE88F7"
+                app:bar_highlight_color="#D810EA"
+                app:left_thumb_color="#8D0D99"
+                app:right_thumb_color="#8D0D99"
+                app:left_thumb_color_pressed="#56005E"
+                app:right_thumb_color_pressed="#56005E"
+                app:data_type="_integer"
+                app:steps="10"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textMax"
+                android:textColor="#000000"
+                android:fontFamily="@font/raleway_bold"
+                android:text="100"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/lnrSeekbar2"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#B5000000"
+                android:fontFamily="@font/raleway_bold"
+                android:text="18"
+                />
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                android:layout_weight="1"
+                android:id="@+id/rangeSeekbar2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:corner_radius="10"
+                app:min_value="18"
+                app:max_value="98"
+                app:bar_color="#EE88F7"
+                app:bar_highlight_color="#D810EA"
+                app:left_thumb_color="#8D0D99"
+                app:right_thumb_color="#8D0D99"
+                app:left_thumb_color_pressed="#56005E"
+                app:right_thumb_color_pressed="#56005E"
+                app:data_type="_integer"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#B5000000"
+                android:fontFamily="@font/raleway_bold"
+                android:text="100"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visibility"
+            android:textColor="#C6000000"
+            android:textSize="15sp"
+            android:fontFamily="@font/raleway_semibold"
+            android:layout_marginBottom="8dp"
+            />
+        <CheckBox
+            android:id="@+id/checkAllOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online"
+            android:textColor="#B5000000"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:onClick="chekk"
+            />
+
+    </LinearLayout>
+</LinearLayout>

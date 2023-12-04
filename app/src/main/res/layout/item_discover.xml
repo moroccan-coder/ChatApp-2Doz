@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+    android:layout_margin="4dp"
+
+    android:outlineSpotShadowColor="@color/colorPrimary2"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/discover_user_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg5"
+                android:scaleType="centerCrop"
+                android:transitionName="user_omg_trans"
+                />
+
+
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/staus_online"
+                    android:src="@drawable/online_circle"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="@drawable/bg_dark_gradien_item"
+               android:layout_alignParentBottom="true"
+               android:padding="8dp"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_weight="1"
+                   >
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="HwariFit"
+                       android:textColor="#ddd"
+                       android:fontFamily="@font/raleway_bold"
+                       android:layout_marginBottom="8dp"
+                       android:id="@+id/item_discover_username"
+                       android:textSize="14sp"
+                       />
+
+                   <TextView
+                       android:id="@+id/item_discover_away"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="8 km away"
+                       android:textColor="#ddd"
+                       android:fontFamily="@font/raleway_semibold"
+                       android:textSize="12sp"
+                       />
+
+               </LinearLayout>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="29"
+                   android:textColor="#C1DDDDDD"
+                   android:fontFamily="@font/raleway_bold"
+                   android:padding="8dp"
+                   android:background="@drawable/bg_age"
+                   android:gravity="center"
+                   android:id="@+id/discover_user_age"
+                   />
+
+           </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+

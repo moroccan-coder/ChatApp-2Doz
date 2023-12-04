@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "21889781849",
+    "firebase_url": "https://needlove-fe392.firebaseio.com",
+    "project_id": "needlove-fe392",
+    "storage_bucket": "needlove-fe392.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21889781849:android:2d4963d247809020",
+        "android_client_info": {
+          "package_name": "com.example.needlove"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21889781849-h8sfne0p03rl5f1g6svmlcaj3et928lb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.needlove",
+            "certificate_hash": "36fba215ce5c208ee96ab8c6f7de0884eff0bbc3"
+          }
+        },
+        {
+          "client_id": "21889781849-fjvp27ugj4oq0813ie1kqn93k2sk0elc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDtWAf-wMp2PJl-1ECGzSKGXrUeNe8E4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21889781849-fjvp27ugj4oq0813ie1kqn93k2sk0elc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

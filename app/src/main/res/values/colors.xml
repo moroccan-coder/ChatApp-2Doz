@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5D1049</color>
+    <color name="colorPrimary_opacity">#975d1049</color>
+    <color name="colorPrimary2">#720D5D</color>
+    <color name="colorPrimaryDark">#4E0D3A</color>
+    <color name="trasparentColor">#00FFFFFF</color>
+    <color name="colorAccent">#cecece</color>
+    <color name="colorRedd">#E30425</color>
+    <color name="tabtextcolor">#B5FFFFFF</color>
+    <color name="tabhindicatorcolor">#E30425</color>
+    <color name="colorMessage">#D0000000</color>
+    <color name="blluee">#00B0FF</color>
+    <color name="color_blak">#DD000000</color>
+
+    <!-- Activity Match -->
+    <color name="transparent">#DF000000</color>
+    <color name="btn_color_start">#fd297D</color>
+    <color name="btn_color_end">#ff7556</color>
+
+
+    <!-- btn Calls sinch api -->
+    <color name="startColor">#00B0FF</color>
+    <color name="stopColor">#EE3F61</color>
+</resources>

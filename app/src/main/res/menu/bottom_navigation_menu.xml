@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+
+    <item
+
+        android:id="@+id/bottomnav_discover"
+
+        android:icon="@drawable/nav_search"
+
+        android:title="Discover" />
+
+    <item
+
+        android:id="@+id/bottomnav_swipe"
+        android:icon="@drawable/nav_swipe"
+
+        android:title="Matcher" />
+
+    <item
+
+        android:id="@+id/bottomnav_moments"
+
+        android:icon="@drawable/globall"
+
+        android:title="Random" />
+
+    <item
+
+        android:id="@+id/bottomnav_message"
+
+        android:icon="@drawable/nav_message"
+
+        android:title="Messages" />
+
+    <item
+
+        android:id="@+id/bottomnav_profile"
+
+        android:icon="@drawable/nav_profile"
+
+        android:title="Profile" />
+
+
+
+
+
+
+
+
+</menu>

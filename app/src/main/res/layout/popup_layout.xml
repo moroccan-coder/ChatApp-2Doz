@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/poppup"
+    android:orientation="vertical"
+   android:gravity="center_vertical"
+    android:padding="8dp">
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/upload_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="new"
+        android:background="#2979FF"
+        android:backgroundTint="#2979FF"
+        android:textSize="11sp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:id="@+id/delete_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="delete"
+        android:background="#FF3D00"
+        android:backgroundTint="#FF3D00"
+        android:textSize="11sp"
+        />
+
+</LinearLayout>

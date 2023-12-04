@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    tools:context=".UserProfile">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <RelativeLayout
+            android:id="@+id/lnrShadowSheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8A000000"
+            android:elevation="8dp"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/lnrTop"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:gravity="center_vertical"
+            android:elevation="4dp"
+            android:background="@color/colorPrimary2"
+            android:paddingEnd="8dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/my_profile_pic"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/bg2"
+                android:transitionName="user_omg_trans"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtUsernameAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="\@Username,30"
+                    android:textColor="#ddd"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtCountryCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="France,Pars"
+                    android:textColor="#9CDDDDDD"
+                    android:textSize="12sp"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtBlockUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You are blocked the user"
+                android:textSize="12sp"
+                android:textColor="#FF1744"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/txtBlockMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You are blocked by the User"
+                android:textSize="12sp"
+                android:textColor="#FF1744"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:src="@drawable/ic_more_vert_black_24dp"
+                android:padding="4dp"
+                android:onClick="showUserBlock"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatBtnDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnrTop"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:alpha="0"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:onClick="ShowCard"
+            android:src="@drawable/ic_keyboard_arrow_down_float"
+            app:fabSize="mini" />
+
+        <LinearLayout
+            android:id="@+id/lnrBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lnrTop"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="btnAddFriend"
+                    >
+                    <ImageView
+                        android:id="@+id/ImgSocialBtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/btn_social_bg"
+                        android:padding="9dp"
+                        android:src="@drawable/ic_person_add_black"
+                        />
+                    <TextView
+                        android:id="@+id/txtSocial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#DD000000"
+                        android:fontFamily="@font/raleway_bold"
+                        android:text="Add Friend"
+                        android:textSize="12sp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="32dp"
+                android:onClick="sendmsg"
+                >
+                <ImageView
+                    android:id="@+id/ImgSocialBtnChat"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/btn_social_bg"
+                    android:padding="9dp"
+                    android:src="@drawable/ic_chat_black"
+                    />
+                <TextView
+                    android:id="@+id/txtSocialFollowChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#DD000000"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Message"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpagerImageSlider2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lnrBtn"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="40dp"
+        />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnrBtn"
+            android:layout_marginTop="32dp"
+            android:id="@+id/scrollHide"
+            android:visibility="gone"
+            android:alpha="0"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_bold"
+                        android:text="About"
+                        android:textColor="#F2000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"
+                        android:background="#DD000000" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="test of yexy"
+                    android:textColor="#DD000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_bold"
+                        android:text="Interests"
+                        android:textColor="#F0000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"
+                        android:background="#DD000000" />
+                </LinearLayout>
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipSpacing="8dp"
+                    android:id="@+id/chipsGroup"
+                    android:layout_marginTop="16dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_bold"
+                        android:text="RelationShip"
+                        android:textColor="#EE000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"
+                        android:background="#DD000000" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    >
+                    <ImageView
+                        android:id="@+id/ImgRelation"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/status_bg_active"
+                        android:padding="7dp"
+                        />
+                    <TextView
+                        android:id="@+id/txtRelation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#DD000000"
+                        />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatBtnUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="4dp"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:onClick="HidCard"
+            android:src="@drawable/ic_keyboard_arrow_up_btnup" />
+    </RelativeLayout>
+
+
+
+<include layout="@layout/bootmsheet_cancel_friend" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

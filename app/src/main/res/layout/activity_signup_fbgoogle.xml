@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg6"
+
+    tools:context=".SignupFBgoogle">
+    <ProgressBar
+        android:indeterminateDrawable="@drawable/m_progress_animation"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:id="@+id/progress_heart"
+        android:layout_centerInParent="true"
+        android:elevation="4dp"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_dark_gradien"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/topBannr"
+            >
+            <ImageView
+                android:id="@+id/backspace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                android:padding="8dp"
+                android:onClick="signout"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create an Account"
+                android:textColor="#C1DDDDDD"
+                android:textSize="18sp"
+                android:elevation="4dp"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/raleway_bold"
+                android:id="@+id/txt_profile"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 1/2"
+                android:fontFamily="@font/raleway_bold"
+                android:textColor="#A4DDDDDD"
+                android:gravity="end"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="center_vertical"
+
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:layout_below="@+id/topBannr"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Username_text_input"
+                    style="@style/TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:outlineAmbientShadowColor="#ddd"
+                    android:outlineSpotShadowColor="#ddd"
+                    android:textColorHint="#ddd"
+                    app:boxStrokeColor="#ddd"
+                    android:fontFamily="@font/raleway_semibold"
+                    app:errorEnabled="true"
+                    android:layout_marginTop="32dp"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Username_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#dcdddddd"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/gender_male"
+                    android:layout_margin="8dp"
+                    android:onClick="gendermSelect"
+                    android:id="@+id/imgGenderM"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgGenderF"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/gender_female"
+                    android:layout_margin="8dp"
+                    android:onClick="genderfSelect"
+                    />
+
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Next"
+                android:textAllCaps="false"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="#66FFFFFF"
+                android:onClick="CreateNewAccount"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="32dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="#E9E9E9"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".NoGpsFrag">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/gpss"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enable Location to Show Nearly People"
+        android:gravity="center"
+        android:textColor="#A6000000"
+        android:fontFamily="@font/raleway_semibold"
+        />
+    <Button
+        android:id="@+id/BtnEnableLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Enable Location Services"
+        app:strokeColor="#FFF"
+        app:cornerRadius="10dp"
+        android:backgroundTint="#045B83"
+        android:textAllCaps="false"
+       android:background="@drawable/btngps"
+        android:textColor="#ddd"
+
+
+        />
+
+</LinearLayout>

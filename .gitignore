@@ -1,5 +1,5 @@
 *.iml
-
+*.jks
 .gradle
 /local.properties
 /.idea/caches
@@ -12,5 +12,6 @@
 /build
 /captures
 .externalNativeBuild
-*.jks
+Signature/
+
 

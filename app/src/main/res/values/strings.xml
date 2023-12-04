@@ -3,8 +3,8 @@
     <string name="forgot_your_password"><u>Forgot your password?</u></string>
 
     <!-- Facebook -->
-    <string name="facebook_app_id" translatable="false">183763046305426</string>
-    <string name="fb_login_protocol_scheme" translatable="false">fb183763046305426</string>
+    <string name="facebook_app_id" translatable="false">2255252525252</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb183253336</string>
 
     <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
 

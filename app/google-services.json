@@ -1,29 +1,29 @@
 {
   "project_info": {
-    "project_number": "21889781849",
-    "firebase_url": "https://needlove-fe392.firebaseio.com",
-    "project_id": "needlove-fe392",
-    "storage_bucket": "needlove-fe392.appspot.com"
+    "project_number": "___",
+    "firebase_url": "_____",
+    "project_id": "___",
+    "storage_bucket": "___"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:21889781849:android:2d4963d247809020",
+        "mobilesdk_app_id": "___",
         "android_client_info": {
-          "package_name": "com.example.needlove"
+          "package_name": "___"
         }
       },
       "oauth_client": [
         {
-          "client_id": "21889781849-h8sfne0p03rl5f1g6svmlcaj3et928lb.apps.googleusercontent.com",
+          "client_id": "___",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.needlove",
-            "certificate_hash": "36fba215ce5c208ee96ab8c6f7de0884eff0bbc3"
+            "package_name": "___",
+            "certificate_hash": "___"
           }
         },
         {
-          "client_id": "21889781849-fjvp27ugj4oq0813ie1kqn93k2sk0elc.apps.googleusercontent.com",
+          "client_id": "___",
           "client_type": 3
         }
       ],

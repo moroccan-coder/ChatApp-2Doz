@@ -20,8 +20,9 @@ Once matched with someone, initiate voice calls for a more personal and interact
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screen1.jpg)
-*Android Chat App Discover*
+<img src="screenshots/screen1.jpg" alt="Android Chat App Discover" width="400" height="200">
+
+
 
 ![Screenshot 2](screenshots/screen2.jpg)
 *Mobile Chat App Sweep right*

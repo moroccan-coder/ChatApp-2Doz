@@ -19,7 +19,8 @@ Use the search functionality to find specific individuals nearby. Customize your
 Once matched with someone, initiate voice calls for a more personal and interactive communication experience.
 
 ## Screenshots
-
+<p align="center" style="margin-top: 20px;">
+  
 <img src="screenshots/screen1.jpg" alt="Android Chat App Discover" width="400" height="711">
 
 
@@ -40,7 +41,8 @@ Once matched with someone, initiate voice calls for a more personal and interact
 
 <img src="screenshots/screen8.jpg" alt="Search Filter to find users in the chat app" width="400" height="711">
 
-
+  
+</p>
 <!-- Add more screenshots as needed -->
 
 ## Technologies Used

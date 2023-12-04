@@ -20,11 +20,26 @@ Once matched with someone, initiate voice calls for a more personal and interact
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
-*Caption for Screenshot 1*
+![Screenshot 1](screenshots/screen1.jpg)
+*Android Chat App Discover*
 
-![Screenshot 2](screenshots/screenshot2.png)
-*Caption for Screenshot 2*
+![Screenshot 2](screenshots/screen2.jpg)
+*Mobile Chat App Sweep right*
+
+![Screenshot 3](screenshots/Screen-3.jpg)
+*screen 3 Voice Chat mobile app*
+
+![Screenshot 4](screenshots/screen5.jpg)
+*user Profile*
+
+![Screenshot 5](screenshots/screen6.jpg)
+*User Setting chat app*
+
+![Screenshot 6](screenshots/screen7.jpg)
+*Chat with different user*
+
+![Screenshot 7](screenshots/screen8.jpg)
+*Search Filter to find users in the chat app*
 
 <!-- Add more screenshots as needed -->
 

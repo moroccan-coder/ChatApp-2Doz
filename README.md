@@ -2,6 +2,8 @@
 
 ![Icon](screenshots/icon.png)
 
+<img src="screenshots/screen1.jpg" alt="Mobile Chat app" width="200" height="200">
+
 2Doz is a mobile chat application for Android that enables you to discover and connect with people around the world. Engage in conversations using both voice and text messages, and explore a variety of features designed to enhance your social experience.
 
 ## Key Features
@@ -23,24 +25,23 @@ Once matched with someone, initiate voice calls for a more personal and interact
 <img src="screenshots/screen1.jpg" alt="Android Chat App Discover" width="400" height="711">
 
 
+<img src="screenshots/screen2.jpg" alt="Mobile Chat App Sweep right" width="400" height="711">
 
-![Screenshot 2](screenshots/screen2.jpg)
-*Mobile Chat App Sweep right*
 
-![Screenshot 3](screenshots/Screen-3.jpg)
-*screen 3 Voice Chat mobile app*
+<img src="screenshots/Screen-3.jpg" alt="screen 3 Voice Chat mobile app" width="400" height="711">
 
-![Screenshot 4](screenshots/screen5.jpg)
-*user Profile*
 
-![Screenshot 5](screenshots/screen6.jpg)
-*User Setting chat app*
+<img src="screenshots/screen5.jpg" alt="user Profile" width="400" height="711">
 
-![Screenshot 6](screenshots/screen7.jpg)
-*Chat with different user*
 
-![Screenshot 7](screenshots/screen8.jpg)
-*Search Filter to find users in the chat app*
+<img src="screenshots/screen6.jpg" alt="User Setting chat app" width="400" height="711">
+
+
+<img src="screenshots/screen7.jpg" alt="Chat with different user" width="400" height="711">
+
+
+<img src="screenshots/screen8.jpg" alt="Search Filter to find users in the chat app" width="400" height="711">
+
 
 <!-- Add more screenshots as needed -->
 

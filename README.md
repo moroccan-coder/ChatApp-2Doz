@@ -22,23 +22,23 @@ Once matched with someone, initiate voice calls for a more personal and interact
 <p align="center" style="margin-top: 20px;">
   
 <img src="screenshots/screen1.jpg" alt="Android Chat App Discover" width="400" height="711">
-
+&nbsp
 
 <img src="screenshots/screen2.jpg" alt="Mobile Chat App Sweep right" width="400" height="711">
-
+&nbsp
 
 <img src="screenshots/Screen-3.jpg" alt="screen 3 Voice Chat mobile app" width="400" height="711">
-
+&nbsp
 
 <img src="screenshots/Screen5.jpg" alt="user Profile" width="400" height="711">
 
-
+&nbsp
 <img src="screenshots/Screen6.jpg" alt="User Setting chat app" width="400" height="711">
 
-
+&nbsp
 <img src="screenshots/Screen7.jpg" alt="Chat with different user" width="400" height="711">
 
-
+&nbsp
 <img src="screenshots/Screen8.jpg" alt="Search Filter to find users in the chat app" width="400" height="711">
 
   
